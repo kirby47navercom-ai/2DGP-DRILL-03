@@ -37,7 +37,9 @@ def move_go():
     for x in range(400,750,5):
         draw_boy(x,100)
     pass
-
+def move_left_diagonal():
+    print('Moving left diagonal')
+    pass
 def move_rectangle():
     print("Moving rectangle")
     move_go()
@@ -56,6 +58,10 @@ def move_circle():
         draw_boy(x, y)
     pass
 def move_triangle():
+    move_go()
+    move_left_diagonal()
+
+    move_right()
     pass
 
 def draw_boy(x: float, y: float):
@@ -68,8 +74,8 @@ def draw_boy(x: float, y: float):
 while True:
     #함수명을 이해가 가도록 적어야함
     move_rectangle()
-    move_circle()
     move_triangle()
+    move_circle()
     #break
     pass
 
