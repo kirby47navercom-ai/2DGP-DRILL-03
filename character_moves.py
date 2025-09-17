@@ -44,6 +44,8 @@ def move_left_up_diagonal():
     pass
 def move_left_down_diagonal():
     print('Moving right diagonal')
+    for x in range(400,50,-5):
+        draw_boy(x,x+50)
     pass
 def move_rectangle():
     print("Moving rectangle")
