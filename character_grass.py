@@ -1,4 +1,5 @@
 from pico2d import *
+import math
 #하나하나할때마다 커밋을해야함
 open_canvas()
 
@@ -9,10 +10,15 @@ def move_rectangle():
     pass
 def move_circle():
     print("Moving circle")
-    clear_canvas_now()
-    boy.draw_now(400,300)
-    #무조건 now로 만들기
-    delay(0.1)
+    r=200
+    for i in range(0,360):
+        clear_canvas_now()
+        x = 400 +r* math.cos(math.radians(i))
+        y = 300 +r* math.sin(math.radians(i))
+        clear_canvas_now()
+        boy.draw_now(x,y)
+        #무조건 now로 만들기
+        delay(0.01)
     pass
 
 while True:
