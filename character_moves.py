@@ -55,7 +55,8 @@ def move_circle():
         y = 300 +r* math.sin(math.radians(i))
         draw_boy(x, y)
     pass
-
+def move_triangle():
+    pass
 
 def draw_boy(x: float, y: float):
     clear_canvas_now()
@@ -66,8 +67,9 @@ def draw_boy(x: float, y: float):
 
 while True:
     #함수명을 이해가 가도록 적어야함
-    move_circle()
     move_rectangle()
+    move_circle()
+    move_triangle()
     #break
     pass
 
