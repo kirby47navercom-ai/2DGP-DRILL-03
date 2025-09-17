@@ -37,8 +37,11 @@ def move_go():
     for x in range(400,750,5):
         draw_boy(x,100)
     pass
-def move_left_diagonal():
+def move_left_up_diagonal():
     print('Moving left diagonal')
+    pass
+def move_left_down_diagonal():
+    print('Moving right diagonal')
     pass
 def move_rectangle():
     print("Moving rectangle")
@@ -59,8 +62,8 @@ def move_circle():
     pass
 def move_triangle():
     move_go()
-    move_left_diagonal()
-
+    move_left_up_diagonal()
+    move_left_down_diagonal()
     move_right()
     pass
 
