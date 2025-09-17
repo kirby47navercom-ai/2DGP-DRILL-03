@@ -28,10 +28,12 @@ def move_bottom():
 def move_left():
     print('Moving left')
     pass
-
+def move_go():
+    pass
 
 def move_rectangle():
     print("Moving rectangle")
+    move_go()
     move_top()
     move_right()
     move_bottom()
