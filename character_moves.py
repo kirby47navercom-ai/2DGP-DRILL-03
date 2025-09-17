@@ -3,6 +3,11 @@ import math
 #하나하나할때마다 커밋을해야함
 #리펙터링(refactor) -> 메서드 추출(extract method) 복사한 것을 함수로 만들 수 있음
 #코딩에서 내가 만든 구현 결과가 제대로 됐는지에 대한 걸린시간 테스트 리드 타임
+#코파일럿을 사용하되 사용만 하지마라
+#가장 큰 부분을 만들려면 작게작게 커밋하면서해야된다
+#하수는 만들고 나중에 함수를 호출
+#고수는 함수호출을 먼저하고 그다음 정의한다
+#테스리드타임을 줄여야한다() 걸리는 시간 자체를 줄이라는 말
 open_canvas()
 
 boy = load_image('character.png')
@@ -14,6 +19,8 @@ def move_top():
     pass
 def move_right():
     print('Moving right')
+    for x in range(0,600,5):
+        draw_boy(550,x)
     pass
 def move_bottom():
     print('Moving bottom')
@@ -33,7 +40,7 @@ def move_rectangle():
 def move_circle():
     print("Moving circle")
     r=200
-    for i in range(0,360):
+    for i in range(-90,270):
         clear_canvas_now()
         x = 400 +r* math.cos(math.radians(i))
         y = 300 +r* math.sin(math.radians(i))
