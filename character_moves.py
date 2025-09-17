@@ -39,6 +39,8 @@ def move_go():
     pass
 def move_left_up_diagonal():
     print('Moving left diagonal')
+    for x in range(750,400,-5):
+        draw_boy(x,100-(x-750))
     pass
 def move_left_down_diagonal():
     print('Moving right diagonal')
