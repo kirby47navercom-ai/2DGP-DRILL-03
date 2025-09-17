@@ -19,8 +19,8 @@ def move_top():
     pass
 def move_right():
     print('Moving right')
-    for x in range(0,600,5):
-        draw_boy(550,x)
+    for x in range(400,750,5):
+        draw_boy(x,100)
     pass
 def move_bottom():
     print('Moving bottom')
@@ -29,15 +29,18 @@ def move_left():
     print('Moving left')
     pass
 def move_go():
+    print('Moving go')
+    for x in range(400,750,5):
+        draw_boy(x,100)
     pass
 
 def move_rectangle():
     print("Moving rectangle")
     move_go()
-    move_top()
     move_right()
-    move_bottom()
+    move_top()
     move_left()
+    move_bottom()
     pass
 def move_circle():
     print("Moving circle")
