@@ -11,7 +11,7 @@ import math
 open_canvas()
 
 boy = load_image('character.png')
-
+ 
 def move_top():
     print('Moving top')
     for y in range(100,500,5):
